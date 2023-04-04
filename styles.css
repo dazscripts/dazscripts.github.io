@@ -32,12 +32,18 @@ html, body {
     margin: 0;
 }
 
+.separator {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: white;
+    margin: 0 10px;
+}
+
 .credits-button {
     font-size: 1.4rem;
     font-weight: 700;
     color: white;
     text-decoration: none;
-    margin-left: 20px;
 }
 
 .button-container {
