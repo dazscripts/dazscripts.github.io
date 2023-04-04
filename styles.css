@@ -35,8 +35,9 @@ html, body {
 .separator {
     font-size: 1.7rem;
     font-weight: 700;
-    color: white;
-    margin: 0 10px;
+    color: rgb(40, 40, 40);
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .credits-button {
