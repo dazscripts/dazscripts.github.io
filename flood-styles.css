@@ -1,0 +1,107 @@
+/* General styles */
+body {
+    font-family: "Gotham Medium", sans-serif;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    margin: 0;
+}
+
+/* Top bar styles */
+.top-bar {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.title-button {
+    text-decoration: none;
+}
+
+.title {
+    font-size: 24px;
+    color: white;
+    margin: 0;
+}
+
+.separator {
+    color: rgb(40, 40, 40);
+    margin: 0 10px;
+}
+
+.credits-button {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Game container styles */
+.game-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.game-image {
+    max-width: 300px;
+    max-height: 300px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+.game-title {
+    font-size: 24px;
+}
+
+.play-game-button {
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* Code container styles */
+.code-container {
+    background-color: rgb(25, 25, 25);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+}
+
+.code-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.code-title {
+    font-size: 24px;
+}
+
+.copy-code-button {
+    font-size: 18px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.code-content {
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    white-space: pre-wrap;
+}
