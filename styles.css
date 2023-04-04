@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://www.example.com/space-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.space-button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.space-button:hover {
+    transform: scale(1.1);
+}
