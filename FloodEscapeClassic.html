@@ -5,17 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flood Escape Classic</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-        function copyCode() {
-            const codeContent = document.getElementById("code-content");
-            const textarea = document.createElement("textarea");
-            textarea.value = codeContent.textContent;
-            document.body.appendChild(textarea);
-            textarea.select();
-            document.execCommand("copy");
-            document.body.removeChild(textarea);
-        }
-    </script>
 </head>
 <body>
     <div class="top-bar">
@@ -35,5 +24,18 @@
             loadstring(game:HttpGet(https://raw.githubusercontent.com/dazscripts/ScriptBlox-Projects/main/FloodEscapeClassic))
         </pre>
     </div>
+
+    <script>
+        function copyCode() {
+            const codeContent = document.getElementById('code-content');
+            const textarea = document.createElement('textarea');
+            textarea.value = codeContent.textContent;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+        }
+    </script>
+    
 </body>
 </html>
