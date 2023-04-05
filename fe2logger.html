@@ -27,13 +27,13 @@
             <button class="copy-code-button" onclick="copyCode()">Copy Code</button>
         </div>
         <pre id="code-content" class="code-content">
-            getgenv().webhook = 'Your Discord Webhook Here'
+getgenv().webhook = 'Your Discord Webhook Here'
 
-            local url = "https://raw.githubusercontent.com/dazscripts/ScriptBlox-Projects/main/fe2logger"
-            local http_get = game.HttpGet or game.HttpService.GetAsync
-            local content = http_get(game, url)
-            local load_script = loadstring(content)
-            load_script()
+local url = "https://raw.githubusercontent.com/dazscripts/ScriptBlox-Projects/main/fe2logger"
+local http_get = game.HttpGet or game.HttpService.GetAsync
+local content = http_get(game, url)
+local load_script = loadstring(content)
+load_script()
         </pre>
     </div>
 
