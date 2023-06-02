@@ -10,6 +10,9 @@
         }
 
         .navbar {
+            position: fixed;
+            top: 0;
+            z-index: 100;
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -31,6 +34,11 @@
             font-weight: bold;
             transition: transform 0.3s ease, background-color 0.3s ease;
             border-radius: 5px;
+        }
+
+        .navbar a.home {
+            font-size: 24px;
+            font-weight: bold;
         }
 
         .navbar .divider {
