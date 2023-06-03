@@ -14,7 +14,7 @@
             top: 0;
             z-index: 100;
             display: flex;
-            justify-content: flex-start;
+            justify-content: space-around; /* Changed to space-around for better spacing */
             align-items: center;
             overflow: hidden;
             background-color: #000;
@@ -72,6 +72,7 @@
         .title {
             font-size: 32px;
             font-weight: bold;
+            color: #f2f2f2; /* Added color to the title */
         }
 
         .divider-content {
@@ -84,6 +85,21 @@
 
         .paragraph {
             font-size: 16px;
+            color: #f2f2f2; /* Added color to the paragraph */
+        }
+
+        /* Added media query for responsiveness */
+        @media screen and (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                height: auto;
+            }
+            .navbar a {
+                font-size: 18px;
+            }
+            .content {
+                margin-top: 150px;
+            }
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
