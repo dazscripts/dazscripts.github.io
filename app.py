@@ -1,5 +1,7 @@
 from flask import Flask, render_template
 from flask_socketio import SocketIO
+from flask_cors import CORS
+
 import openai
 
 
@@ -24,3 +26,5 @@ def handle_message(message):
 
 if __name__ == '__main__':
     socketio.run(app, debug=True)
+
+CORS(app)
