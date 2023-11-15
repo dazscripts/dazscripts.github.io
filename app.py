@@ -5,10 +5,11 @@ from flask_cors import CORS
 import openai
 
 
-
 app = Flask(__name__)
+CORS(app)
+socketio = SocketIO(app, cors_allowed_origins="*")
+
 app.config['SECRET_KEY'] = 'secret!'
-socketio = SocketIO(app)
 openai.api_key = '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'
 
 @app.route('/')
@@ -27,4 +28,3 @@ def handle_message(message):
 if __name__ == '__main__':
     socketio.run(app, debug=True)
 
-CORS(app)
