@@ -18,7 +18,7 @@ def index():
 @socketio.on('message')
 def handle_message(message):
     response = openai.Completion.create(
-        model="text-davinci-003",
+        model="gpt-4",
         prompt=message,
         max_tokens=150
     )
