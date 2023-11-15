@@ -1,132 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Daz's Website</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            background-color: #663399;
-            margin: 0;
-            padding: 0;
-            font-family: Arial;
-            color: #f2f2f2;
-        }
-
-        .navbar {
-            position: fixed;
-            top: 0;
-            z-index: 100;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            overflow: hidden;
-            background-color: #000;
-            height: 60px;
-            border-radius: 5px;
-            width: 100%;
-            padding-left: 10px;
-        }
-
-        .navbar a {
-            color: #f2f2f2;
-            text-align: center;
-            padding: 10px 12px;
-            text-decoration: none;
-            font-family: Arial;
-            font-size: 16px;
-            font-weight: bold;
-            transition: transform 0.3s ease, background-color 0.3s ease;
-            border-radius: 5px;
-        }
-
-        .navbar a.home {
-            font-size: 20px;
-        }
-
-        .navbar .divider {
-            color: #808080;
-            padding: 0 10px;
-        }
-
-        .navbar a.home:before {
-            content: "\f015";
-            font-family: "Font Awesome 5 Free";
-            padding-right: 5px;
-        }
-
-        .navbar a.scripting:before {
-            content: "\f121"; /* Restored original scripting icon */
-            font-family: "Font Awesome 5 Free";
-            padding-right: 5px;
-        }
-
-        .navbar a.contacts:before {
-            content: "\f2b9"; /* Restored original contacts icon */
-            font-family: "Font Awesome 5 Free";
-            padding-right: 5px;
-        }
-
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-            transform: scale(1.1);
-        }
-
-        .navbar a:active {
-            transform: scale(0.9);
-        }
-
-        .content {
-            margin-top: 80px;
-            text-align: center;
-        }
-
-        .info {
-            font-size: 20px;
-            margin-top: 20px;
-        }
-
-        .image-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .image-container img {
-            margin: 10px;
-            max-width: 300px;
-            height: 200px; /* Set a fixed height */
-            object-fit: cover; /* Ensure images cover their area without distortion */
-            border-radius: 10px;
-        }
-    </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="icon" href="https://th.bing.com/th/id/OIP.hUfSy429uO9an_NCYf9NkwHaHa?pid=ImgDet&rs=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Chat</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div class="navbar">
-  <a class="home" href="#home">Home</a>
-  <span class="divider">•</span>
-  <a class="scripting" href="#scripting">Scripting</a>
-  <span class="divider">•</span>
-  <a class="contacts" href="#contacts">Contacts</a>
-</div>
-
-<div class="content">
-  <div class="info">
-    <p>Hello, I'm Daz. I like to spend my time doing things online like coding, playing games, making things.</p>
-    <p>Age: 15</p>
-    <p>Hobby: Scripting</p>
-    <p>Favorite Game: Flood Escape 2</p>
-  </div>
-  <div class="image-container">
-    <img src="https://th.bing.com/th/id/OIP._TuV2j_RODKbbaDgkL1Z5gHaE4?pid=ImgDet&rs=1" alt="Scripting Image">
-    <img src="https://i.ytimg.com/vi/00Z1bhA69n8/maxresdefault.jpg" alt="Flood Escape 2 Image">
-  </div>
-</div>
-
+    <div id="chat-container">
+        <div id="chat-box"></div>
+        <input type="text" id="chat-input" placeholder="Type your message...">
+        <button id="send-button">Send</button>
+    </div>
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
