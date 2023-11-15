@@ -1,5 +1,4 @@
-const protocol = (window.location.protocol === 'https:') ? 'wss://' : 'ws://';
-const socket = io.connect(protocol + window.location.host);
+const socket = io.connect("https://daz.pythonanywhere.com");
 
 document.getElementById('send-button').addEventListener('click', function() {
     const message = document.getElementById('chat-input').value;
