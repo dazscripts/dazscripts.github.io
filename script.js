@@ -1,4 +1,5 @@
-const socket = io.connect('https://' + document.domain + ':' + location.port);
+const protocol = (window.location.protocol === 'https:') ? 'wss://' : 'ws://';
+const socket = io.connect(protocol + window.location.host);
 
 document.getElementById('send-button').addEventListener('click', function() {
     const message = document.getElementById('chat-input').value;
