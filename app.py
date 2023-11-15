@@ -5,7 +5,7 @@ import openai
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app)
-openai.api_key = 'your-api-key'
+openai.api_key = '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'
 
 @app.route('/')
 def index():
